@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Getting Rest Countries Details</h1>
+
+    <script>
+      var http = new XMLHttpRequest(); //instance or obj creation
+
+      //SENDING REQUEST TO THE API
+      http.open("GET", "https://restcountries.com/v3.1/all");
+      http.send();
+
+      //GETTING RESPONSE OR ERROR FROM THE API
+      http.onload = () => {
+        if (http.status === 200) {
+          var restcountries = JSON.parse(http.response);
+
+          const countriesInAsia = restcountries.filter((country) => {
+            if (country.region === "Asia") {
+              return true;
+            }
+          });
+          console.log("COUNTRIES IN ASIA: ", countriesInAsia);
+
+          restcountries.forEach((country) => {
+            console.log("Name: ", country.name.official);
+            // console.log("Capital: ", country.capital[0]);
+            country.capital.forEach((cap) => {
+              console.log("Capital: ", cap);
+            });
+            console.log("Flag: ", country.flag);
+          });
+        } else {
+          console.log("ERROR");
+        }
+      };
+    </script>
+  </body>
+</html>
