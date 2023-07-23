@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./main.css" />
+
+    <style>
+      /* INTERNAL CSS */
+      .my-title {
+        color: brown;
+        background-color: cadetblue;
+      }
+      .hello {
+        width: 100px;
+        height: 100px;
+        background-color: burlywood;
+      }
+      .greetings {
+        color: green;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      #my-anchor {
+        font-size: 50px;
+        color: yellowgreen;
+      }
+
+      .my-heading {
+        color: red;
+      }
+
+      .heading-example {
+        color: yellowgreen;
+        background-color: aquamarine;
+        /* display: inline; */
+      }
+
+      .span-example {
+        color: red;
+        background-color: thistle;
+        /* display: block; */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- INLINE CSS -->
+      <h1 style="color: red; background-color: aqua">Hello World</h1>
+      <h1 style="color: blue">How are you!</h1>
+      <span style="background-color: bisque">Hello</span>
+    </div>
+    <div>
+      <!-- INTERNAL CSS -->
+      <h1 class="my-title">INTERNAL CSS</h1>
+      <h2 class="hello">HELLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</h2>
+      <div class="greetings">Hope you are doing good!</div>
+      <a id="my-anchor" href="https://www.google.com">Google.com</a>
+    </div>
+    <div>
+      <!-- EXTERNAL CSS -->
+      <h1 class="external-heading">EXTERNAL CSS</h1>
+      <h1 class="external-greeting">How Are you</h1>
+      <h1 id="external-id">What do you do?</h1>
+    </div>
+
+    <div class="main-css-div">STYLES FROM MAIN.css</div>
+
+    <!-- EXPERIMENT -->
+    <h1 class="my-heading" style="color: yellow">HELLO FROM FAROOK!</h1>
+
+    <!-- HOW TO STRUCTURE -->
+    <div class="vehicle">
+      <div class="car">
+        <div id="hyundai-i20"></div>
+        <div id="hyundai-creta"></div>
+        <div id="honda-civic"></div>
+      </div>
+      <div class="car luxury-car">
+        <div id="bmw"></div>
+      </div>
+      <div class="bike">
+        <div id="re-continental-gt"></div>
+        <div id="re-hunter"></div>
+        <div id="apache-rr-310"></div>
+      </div>
+    </div>
+    <div>
+      <h1 class="heading-example" style="display: inline">
+        BLOCK LEVEL ELEMENT
+      </h1>
+      <h1 class="heading-example" style="display: inline">
+        BLOCK LEVEL ELEMENT
+      </h1>
+      <h1 class="heading-example">BLOCK LEVEL ELEMENT</h1>
+      <h1 class="heading-example">BLOCK LEVEL ELEMENT</h1>
+      <h1 class="heading-example">BLOCK LEVEL ELEMENT</h1>
+    </div>
+    <div>
+      <span class="span-example">INLINE ELEMENT</span>
+      <span class="span-example">INLINE ELEMENT</span>
+      <span class="span-example">INLINE ELEMENT</span>
+      <span class="span-example">INLINE ELEMENT</span>
+    </div>
+  </body>
+</html>
+
+<!-- HOW CAN WE APPLY CSS TO HTML ELEMENTS -->
+<!-- SPECIFYING CSS -->
+<!-- 1. INLINE CSS - If css are given inside the element using 'style' attribute (HIGHEST PRIORITY) -->
+<!-- 2. INTERNAL CSS - If css are given inside the html file using <style> </style> (SECOND HIGHEST PRIORITY) -->
+<!-- 3. EXTERNAL CSS - If css are given in external .css file and linked to html using <link> (LAST PRIORITY) -->

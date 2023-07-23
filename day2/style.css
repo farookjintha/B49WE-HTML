@@ -1,0 +1,21 @@
+.external-heading {
+  color: green;
+  text-transform: uppercase;
+}
+
+.external-greeting {
+  color: blue;
+  text-transform: capitalize;
+}
+
+#external-id {
+  color: red;
+  text-transform: lowercase;
+}
+
+.my-heading {
+  font-size: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: green !important;
+}
