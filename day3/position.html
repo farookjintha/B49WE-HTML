@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      position: relative;
+    }
+
+    .box {
+      border: 1px solid red;
+      margin: 20px;
+      height: 100px;
+    }
+    .box1 {
+      background-color: aliceblue;
+    }
+    .box2 {
+      background-color: aquamarine;
+    }
+    .box3 {
+      background-color: cadetblue;
+    }
+    .box4 {
+      background-color: grey;
+    }
+
+    .box5 {
+      background-color: coral;
+      position: sticky;
+      top: 200px;
+    }
+
+    .child2 {
+      position: relative;
+      left: 50px;
+      top: 10px;
+    }
+
+    .child3 {
+      position: absolute;
+      top: 40px;
+    }
+
+    .child4 {
+      position: fixed;
+      top: 10px;
+      right: 30px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>POSITION</h1>
+      <div class="box box1" id="myId">
+        <div class="child1">CHILD 1 -> (POSITION - STATIC)</div>
+      </div>
+      <div class="box box2">
+        <div class="wrapper">
+          <div>CHILD 2</div>
+          <div>CHILD 2</div>
+          <div>CHILD 2</div>
+          <div>CHILD 2</div>
+          <div class="child2">CHILD 2 -> (POSITION - RELATIVE)</div>
+        </div>
+      </div>
+      <div class="box box3">
+        <div>CHILD 3</div>
+        <div>CHILD 3</div>
+        <div>CHILD 3</div>
+        <div>CHILD 3</div>
+        <div class="child3">CHILD 3 -> (POSITION - ABSOLUTE)</div>
+      </div>
+      <div class="box box4">
+        <div>CHILD 4</div>
+        <div>CHILD 4</div>
+        <div>CHILD 4</div>
+        <div>CHILD 4</div>
+        <div class="child4">CHILD 4 -> (POSITION - FIXED)</div>
+      </div>
+      <div class="box box5">
+        <div>CHILD 5</div>
+        <div>CHILD 5</div>
+        <div>CHILD 5</div>
+        <div>CHILD 5</div>
+        <div class="child5">CHILD 5 -> (POSITION - STICKY)</div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+
+  </body>
+</html>
+
+<!-- POSITION -->
+
+<!-- 1. Static -> Default
+2. Relative -> when we are moving the element from its orginal position (by using TOP, BOTTOM, LEFT, RIGHT)
+3. Absolute -> it moves from its parents position (if parent is relative); (by using TOP, BOTTOM, LEFT, RIGHT)
+4. Sticky -> it be like static at first, once we reach the position: then it behaves like fixed, it will be there even scrolling.
+5. Fixed -> it will be fixed at that position (relative to body/root) even where scrolling  -->
+
+<!-- {
+    position: relative or absolute or sticky  or fixed;
+    top: 10px;
+    bottom: 20px;
+    left: 10px;
+    right: 15px;
+} -->
