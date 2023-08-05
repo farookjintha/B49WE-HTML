@@ -1,0 +1,69 @@
+.box{
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    /* background-color: bisque; */
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: antiquewhite;
+}
+.child{
+    border: 1px solid red;
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* MEDIA QUERIES  - RESPONSIVE DESIGN */
+
+@media screen and (max-width: 515px){
+    .box{
+        width: 100%;
+        background-color: aquamarine;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 516px) and (max-width: 900px){
+    .box{
+        background-color: cadetblue;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px){
+    .box{
+        background-color: crimson;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px){
+    .box{
+        background-color: gold;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1920px){
+    .box{
+        background-color: darkblue;
+    }
+}
+
+@media screen and (min-width: 1921px){
+    .box{
+        background-color: bisque;
+    }
+}
+/* 
+@media screen and (orientation: landscape){
+    .box{
+        background-color: red;
+    }
+} */
